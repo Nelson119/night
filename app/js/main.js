@@ -19,10 +19,17 @@ $(document).ready(function(){
     $('.Character').eq($(this).index())
       .addClass('bounceInLeft')
       .removeClass('bounceOutLeft')
+      .addClass('active')
 
       .siblings()
       .removeClass('bounceInLeft')
-      .addClass('bounceOutLeft');
+      .addClass('bounceOutLeft')
+      .removeClass('active');
+    var url = $('.Character').eq($(this).index()).attr('data-href');
+    var state = { 'page_id': url};
+    var title = url;
+
+    history.pushState(state, title, url);
 
   });
 });

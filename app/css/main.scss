@@ -111,12 +111,16 @@
 	top:0;
 	bottom:0;
 	position: fixed;
-	animation-delay:1s;
+	opacity:0;
 	&.C01{
 		background-image: url(../img/onl-cha-01.png);
 	}
 	&.C02{
 		background-image: url(../img/onl-cha-02.png);
+	}
+	&.active{
+		opacity:1;
+		animation-delay:1s;
 	}
 	// &.C03{
 	// 	background-image: url(../img/onl-cha-03.png);
