@@ -1,0 +1,25 @@
+{
+  "name": "night",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "gsap": "~1.18.0",
+    "lodash": "~3.10.1",
+    "font-awesome": "~4.4.0",
+    "bootstrap": "~3.3.5",
+    "jquery.flip": "*",
+    "malihu-custom-scrollbar-plugin": "~3.1.2",
+    "animate.css": "~3.4.0",
+    "normalize-css": "normalize.css#~3.0.3"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    }
+  }
+}
